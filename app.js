@@ -17,15 +17,15 @@
 // Вивести в консолі усі числа кратні 5, від 0 до введеного користувачем числа. 
 // Якщо таких чисел немає - вивести в консоль фразу Sorry, no numbers.
 
-const userName = prompt('Please enter your name');
-const userNumber = prompt(`${userName} , please enter your number `);
+const userNumber = prompt('Enter number');
 
 let number = parseInt(userNumber);
 
-let found = false
 for(let index = 0; index <= number; index++) {
 	if(index % 5 === 0) {
 		console.log(index);
-		found = true;
+	} 
 	}
+	if(userNumber == undefined) {
+		console.log('Sorry, no number');
 }
